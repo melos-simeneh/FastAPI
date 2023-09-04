@@ -25,6 +25,14 @@ async def create_user(user:User):
     db.append(user)
     return user
 
+@app.get("/api/users/{id}")
+async def get_user(id:UUID):
+    for user in db:
+        if user.id==id:
+            return user
+    
+    raise HTTPException(status_code=404,detail= f"User with id {id} not found")
+
 @app.put("/api/users/{id}")
 async def update_user(user_update:UserUpdateRequest,id):
     for user in db:
