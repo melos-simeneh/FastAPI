@@ -12,7 +12,7 @@ $ pip install fastapi uvicorn
 ```
 $ uvicorn main:app --reload
 ```
-this will start the app on http://127.0.0.1:8000
+this will start the app on http://127.0.0.1:8000 \
 swagger doc http://127.0.0.1:8000/docs
 
 ## API Endpoints
