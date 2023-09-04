@@ -23,3 +23,8 @@ def root():
 @app.get("/api/users")
 async def fetch_users():
     return db
+
+@app.post("/api/users")
+async def create_user(user:User):
+    db.append(user)
+    return user
