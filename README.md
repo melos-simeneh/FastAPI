@@ -17,9 +17,9 @@ swagger doc http://127.0.0.1:8000/docs
 
 ## API Endpoints
 - GET **/api/users**: Get all users
-- POST **/api/user/**: Create user
+- POST **/api/user**: Create user
 - GET **/api/users/:id**: Get a user
 - PUT **/api/users/:id**: Update a user.
-- DELETE **/:id**: Delete a user.
+- DELETE **/api/users/:id**: Delete a user.
 ## Thank You
 Thank you for taking the time to explore the Todo app. I hope it provides you with valuable information.
